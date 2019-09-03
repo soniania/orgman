@@ -9,7 +9,13 @@ public class GenderFactory {
 
     //TODO: implement method body ONLY!
     public static Gender buildGender(String genderDescription) {
-        throw new UnsupportedOperationException("Not yet supported!");
+        //throw new UnsupportedOperationException("Not yet supported!");
+
+        return new Gender.Builder()
+                .genderId(SUFFIX)
+                .genderDescription(genderDescription)
+                .build();
+
         /**
          * Your implementation goes here
          * INSTRUCTIONS

@@ -6,7 +6,11 @@ public class OrganisationUserFactory {
 
     //TODO: implement method body ONLY!
     public static OrganisationUser buildOrganisationUser(String orgCode, String userEmail) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        //throw new UnsupportedOperationException("Not supported yet.");
+
+        OrganisationUser organisationUser = new OrganisationUser( orgCode, userEmail);
+        return organisationUser;
+
         /**
          * Your implementation goes here
          * INSTRUCTIONS

@@ -1,5 +1,7 @@
 package ac.za.cput.adp3.xyzcongolmerate.factory.demography;
 
+import ac.za.cput.adp3.xyzcongolmerate.domain.demography.Gender;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class GenderFactoryTest {
@@ -7,7 +9,11 @@ public class GenderFactoryTest {
     //TODO: implement method body ONLY!
     @Test
     public void buildGender() {
-        throw new UnsupportedOperationException("Not supported yet!");
+        //throw new UnsupportedOperationException("Not supported yet!");
+
+        Gender gender = GenderFactory.buildGender("Female");
+
+        Assert.assertNotNull(gender.getGenderDescription());
         /**
          * Your implementation goes here
          *

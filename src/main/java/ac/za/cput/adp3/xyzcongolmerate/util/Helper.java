@@ -14,7 +14,18 @@ public class Helper {
 
     public static String getSuffixFromClassName(Class<?> aClass) {
         String className = getClassName(aClass);
-        throw new UnsupportedOperationException("Not yet supported!");
+        //throw new UnsupportedOperationException("Not yet supported!");
+        String letter = "";
+
+        for (int i = 0; i < className.length(); i++){
+
+            if(Character.isUpperCase(className.charAt(i))){
+
+                letter += " " +className.charAt(i);
+            }
+
+        }
+        return letter;
         /**
          * Your implementation goes here
          *

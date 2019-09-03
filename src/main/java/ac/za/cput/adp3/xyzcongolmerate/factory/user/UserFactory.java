@@ -6,7 +6,15 @@ public class UserFactory {
 
     //TODO: implement method body ONLY!
     public static User buildUser(String userEmail, String firstName, String lastName) {
-        throw new UnsupportedOperationException("Not supported yet.");
+        //throw new UnsupportedOperationException("Not supported yet.");
+
+        return new User.Builder()
+                .userEmail(userEmail)
+                .firstName(firstName)
+                .lastName(lastName)
+                .build();
+        //User user = new User(firstName, lastName);
+
         /**
          * Your implementation goes here
          * INSTRUCTIONS
